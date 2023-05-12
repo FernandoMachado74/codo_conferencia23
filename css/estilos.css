@@ -1,0 +1,75 @@
+/**{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}*/
+
+
+/* barra menu*/
+#logoCodo {
+	height: 70px;
+	padding-bottom: none;
+}
+
+/*Pantalla principal de vista*/
+
+#principal.container-fluid{
+	margin-bottom: 2%;
+}
+
+#fondo.row{
+	background-image: url(../images/edificio_ba1.jpeg);
+	height: 80vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: black;
+}
+
+#h1.conferencia{
+	padding-left: 200px;
+}
+
+/*Discripción de oradores*/
+#oradores.container{
+	padding-top: 2%;
+}
+
+
+
+.card-img {
+	height: 75%;
+	object-fit: cover;
+}
+
+.card {
+	height: 60vh;
+}
+
+/*Descripción turística*/
+#texto_bsas.container-fluid {
+	background-color: rgb(36, 35, 35);
+	color: white;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#txtba{
+	margin-top: 5%;
+}
+	
+
+/*formulario*/
+
+
+/*menu al pie*/
+footer{
+		padding-top: 1%;
+}
+#menupie{
+	background-image: linear-gradient(to right, rgb(33, 54, 54), rgb(1, 83, 92));
+	padding: 1%;
+	}

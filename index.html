@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferencia en BA</title>    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <!--Barra de navegación superior-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img id="logoCodo" src="images/codoacodo-PhotoRoom.png-PhotoRoom.png" alt="logo de codo a codo">
+          <a class="navbar-brand" href="#">Conf Bs. As.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">El lugar y la fecha</a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Conviértete en orador</a>
+            </li>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-info text-opacity-75" href="#">Comprar tickets</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!--Pantalla principal de vista-->
+<div id="principal" class="container-fluid ">      
+        <div id="fondo" class="row">
+             <div class="col-5"></div>
+             <div class="col-6">
+            <h1 id= "conferencia" class="text-end text-light">Conferencia en BA</h1>
+            <p id= "conf-txt" class= "text-end text-light">Conf Bs As llega por primera a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y la experiencia que están creando el futuro de la internet. Ven a conocer miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para vos. Te esperamos! </p>
+            <div id="botonessup" class="row justify-content-end">
+            <div></div>
+            <button type="button" class="btn btn-outline-light col-3">Quiero ser orador</button>
+            <button type="button" class="btn btn-success col-3">Comprar ticket</button>
+          </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+        </div>
+</div>
+
+<!--Discripción de oradores-->
+    <div id= "oradores" class="container">
+        <h6 id="conoce" class="text-center text-uppercase">Conoce a los</h6>
+        <h2 id="titulo_orador" class="text-center text-uppercase">oradores</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/stevejobs.jpeg" class="card-img-top" alt="foto de Seteve Jobs">
+                <div class="card-body">
+                  <button type="button" class="btn btn-warning btn-sm text-wrap" style="width: 6rem;">JavaScript</button>
+                  <button type="button" class="btn btn-info btn-sm text-light text-wrap" style="width: rem;">React</button>
+                  <h5 class="card-title">Steve Jobs</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nemo rem aliquid animi dolor corrupti dicta, pariatur, officia fuga dolores alias tenetur quae excepturi optio exercitationem libero! Assumenda, molestiae velit!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/billgates.jpeg" class="card-img-top" alt="foto de Bill Gates">
+                <div class="card-body">
+                  <button type="button" class="btn btn-warning btn-sm text-wrap" style="width: 6rem;">JavaScript</button>
+                  <button type="button" class="btn btn-info btn-sm text-light text-wrap" style="width: rem;">React</button>
+                  <h5 class="card-title">Bill Gates</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eos eius, minus culpa dolor illo delectus temporibus quaerat molestias dolorum nemo expedita aut accusantium numquam enim! Ipsa earum voluptatum modi?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/adaloveca.jpeg" class="card-img-top" alt="Fotod Ada Lovedca">
+                <div class="card-body">
+                  <button type="button" class="btn btn-secondary btn-sm text-wrap">Negocios</button>
+                  <button type="button" class="btn btn-danger btn-sm text-light text-wrap">Startup</button>
+                  <h5 class="card-title">Ada Lovelaca</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque quia dolor quas earum aspernatur ipsum alias sapiente ratione, fuga suscipit quam error perferendis ex facere, officiis nam laudantium non aliquam.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+<!--Breve descripción turística-->
+<div  id="texto_bsas" class="container-fluid" >
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="images/playa.jpeg" class="img-fluid align-self-start" alt="Foto playa mar del plata">
+    </div>
+    <div class="col-sm-6">
+      <h2 id="txtba">Bs As en octubre</h2>
+      <p>Conf Bs As llega por primera a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y la experiencia que están creando el futuro de la internet. Ven a conocer miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para vos. Te esperamos!</p>
+      <button type="button" class="btn btn-outline-light">Conocer más</button>
+    </div>
+  </div>
+</div>
+
+<!--Formulario de inscripción-->
+
+<div id="formulario">
+  <h6 id="convierte" class="text-center text-uppercase">Conviértete en un</h6>
+  <h1 id="titulo_orador" class="text-center text-uppercase">orador</h1>
+  <h5 id="titulo_orador" class="text-center">Anotáte como orador para dar charla ignite. ¡Cuéntanos de qué quieres hablar!</h5>
+<form class="row g-3 justify-content-center">
+  <div class="col-3">
+      <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+    </div>
+    <div class="col-3">
+      <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+    </div>
+    <div></div>
+    <div class="form-floating col-6">
+      <textarea class="form-control" placeholder="¿Sobre qué quieres hablar?" id="floatingTextarea"></textarea>
+      <label for="floatingTextarea">¿Sobre qué quieres hablar?</label>
+   <p>Recuerda incluir un título para tu charla.</p>
+    </div>
+    <div></div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-success" type="button">Enviar</button>
+    </div>
+</form>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+<!--Menú al pie-->
+<footer>
+  <div id="menupie">
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link text-white" aria-current="page" href="#">Preguntas frecuentes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">Contáctenos</a>
+    </li>    
+    <li class="nav-item">
+      <a class="nav-link text-white " href="#">Prensa</a>
+    </li>        
+    <li class="nav-item">
+      <a class="nav-link  text-white" href="#">Conferencias</a>
+    </li>    
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">Términos y condiciones</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">Privacidad</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white">Estudiantes</a>
+    </li>
+  </ul>
+</div>
+</footer>
+</html>
