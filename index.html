@@ -9,9 +9,9 @@
 </head>
 <body>
   <!--Barra de navegación superior-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <img id="logoCodo" src="images/codoacodo-PhotoRoom.png-PhotoRoom.png" alt="logo de codo a codo">
+          <img id="logoCodo" src="images/codoacodo-PhotoRoom.png-PhotoRoom.png" alt="logo de codo a codo" href="#logoCodo">
           <a class="navbar-brand" href="#">Conf Bs. As.</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,18 +22,18 @@
                 <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Los oradores</a>
+                <a class="nav-link" href="#oradores">Los oradores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">El lugar y la fecha</a>
+                <a class="nav-link" href="#texto_bsas">El lugar y la fecha</a>
               </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Conviértete en orador</a>
+              <a class="nav-link" href="#formulario">Conviértete en orador</a>
             </li>
             </li>
             <li class="nav-item">
-            <a class="nav-link text-info text-opacity-75" href="#">Comprar tickets</a>
+            <a class="nav-link text-info text-opacity-75" href="#quieroMiEntrada">Comprar tickets</a>
             </li>
             </ul>
           </div>
@@ -49,8 +49,8 @@
             <p id= "conf-txt" class= "text-end text-light">Conf Bs As llega por primera a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y la experiencia que están creando el futuro de la internet. Ven a conocer miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para vos. Te esperamos! </p>
             <div id="botonessup" class="row justify-content-end">
             <div></div>
-            <button type="button" class="btn btn-outline-light col-3">Quiero ser orador</button>
-            <button type="button" class="btn btn-success col-3">Comprar ticket</button>
+            <a class="btn btn-outline-light col-3" href="#formulario">Quiero ser orador</a>
+            <a class="btn btn-success col-3" href="#formTotal" style="background-color:rgb(107, 208, 7)">Comprar ticket</a>
           </div>
           </div>
           <div class="col-1"></div>
@@ -108,7 +108,7 @@
     <div class="col-sm-6">
       <h2 id="txtba">Bs As en octubre</h2>
       <p>Conf Bs As llega por primera a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y la experiencia que están creando el futuro de la internet. Ven a conocer miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para vos. Te esperamos!</p>
-      <button type="button" class="btn btn-outline-light">Conocer más</button>
+      <a type="button" class="btn btn-outline-light" href="https://www.turismomardelplata.gob.ar/" target=”_blank”>Conocer más</a>
     </div>
   </div>
 </div>
@@ -134,12 +134,89 @@
     </div>
     <div></div>
     <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-success" type="button">Enviar</button>
+      <button class="btn btn-success" type="button" style="background-color:rgb(107, 208, 7); margin-top: -30px; margin-bottom: 30px;">Enviar</button>
     </div>
 </form>
 </div>
 
+
+<!--Valor inscripción-->
+<h2 class="container text-center" id="quieroMiEntrada" style="margin-top: 20px; font-weight: 700; color: darkslateblue;"> QUIERO COMPRAR MI ENTRADA</h2>
+<h3 class="container text-center" style="margin-top: 10px; font-weight: 200;"> VALOR DEL TICKET PÚBLICO GENERAL $200</h3>
+<div id="tarifas" class="flex-container">
+  <div id="estudiante">
+    <h3 style="font-weight: 700;">Estudiante</h3>
+    <h5>Tiene descuento del:</h5>
+    <h3 style="font-weight: 900; color: darkslateblue;">80%</h3>
+    <h6 style="font-style: italic;">*Presentar documentación</h6>
+  </div>
+  <div id="trainee">
+    <h3 style="font-weight: 700;">Trainee</h3>
+    <h5>Tiene descuento del:</h5>
+    <h3 style="font-weight: 900; color: darkslateblue;">50%</h3>
+    <h6 style="font-style: italic;">*Presentar documentación</h6>
+  </div>
+  <div id="junior">
+    <h3 style="font-weight: 700;">Junior</h3>
+    <h5>Tiene descuento del:</h5>
+    <h3 style="font-weight: 900; color: darkslateblue;">15%</h3>
+    <h6 style="font-style: italic;">*Presentar documentación</h6>
+  </div>
+</div>
+
+<!--valor ticket-->
+<form id="formTotal" method="POST" class="row g-3 justify-content-center">
+<div id="datos">
+<div id="datos" class="row g-3 justify-content-center">
+  <div class="col-3">
+    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+  </div>
+  <div class="col-3">
+    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+  </div>
+  <div></div>
+  <div class="col-6">
+    <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail">
+  </div>
+</div>
+
+<div class="row g-3 justify-content-center" style="padding-top: 10px;">
+  <div class="col-3">
+    <label for="cantidad">Cantidad</label>
+    <input type="number" id="cantidad" class="form-control"
+      placeholder="Ingresar cantidad de entradas por categoria">
+  </div>
+  <div class="col-3">
+    <label for="categorias">Categoría</label>
+    <select id="categorias" class="form-select">
+      <option value="gene">Público General</option>
+      <option value="estu">Estudiante</option>
+      <option value="trai">Trainee</option>
+      <option value="juni">Junior</option>
+    </select>
+  </div>
+</div>
+
+
+<div id= "total" class="flex-container">
+  <div id="totalPagar">Total a pagar $: </div>
+</div>
+<div></div>
+
+<div class="row g-3 justify-content-center">
+  <div class="col-3">
+    <button type="submit" id="resumen" class="btn btn-success w-100"
+      style="background-color:rgb(107, 208, 7); border-color: rgb(84, 161, 7);">Resumen</button>
+  </div>
+  <div class="col-3">
+    <button type="reset" id="borrar" class="btn btn-success w-100"
+      style="background-color:rgb(7, 110, 161) ; border-color: rgb(7, 110, 161);">Borrar</button>
+  </div>
+</div>
+</form>
+
 <script src="js/bootstrap.min.js"></script>
+<script src="/js/script.js"></script>
 
 </body>
 
